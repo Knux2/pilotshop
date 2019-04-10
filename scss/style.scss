@@ -1,65 +1,89 @@
-* {
-  box-sizing: border-box; }
+*{
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 nav {
-  overflow: auto; }
-  nav li {
+  overflow: auto;
+  li {
     list-style: none;
     display: inline;
-    padding: 0 15px 0 15px; }
-  nav p {
+    padding: 0 15px 0 15px;
+  }
+  p {
     float: left;
     display: inline;
     position: relative;
-    left: 100px; }
+    left: 100px;
+  }
+}
 
 .search {
   overflow: auto;
   padding: 5px;
-  background-color: gray; }
-  .search ul {
-    float: right; }
-  .search li:hover {
-    color: blue;
-    cursor: pointer; }
-  .search p:hover {
-    color: blue;
-    cursor: pointer; }
+  background-color: gray;
+  ul {
+    float: right;
+  }
+  li {
+    &:hover {
+      color: blue;
+      cursor: pointer;
+    }
+  }
+  p {
+    &:hover {
+      color: blue;
+      cursor: pointer;
+    }
+  }
+}
 
 .logo {
   overflow: auto;
-  padding: 5px; }
-  .logo ul {
-    float: right; }
-  .logo img {
+  padding: 5px;
+  ul {
+    float: right;
+  }
+  img {
     width: 300px;
     position: relative;
-    left: 100px; }
-    .logo img:hover {
-      cursor: pointer; }
-  .logo li:hover {
-    border: 1px solid black;
-    cursor: pointer; }
+    left: 100px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  li {
+    &:hover {
+      border: 1px solid black;
+      cursor: pointer;
+    }
+  }
+}
 
 .pilot {
   text-align: center;
   border: 2px solid black;
   margin: 10px;
-  display: none; }
-  .pilot:hover {
-    cursor: pointer; }
+  display: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
 
 main {
   background-image: url(../img/2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 250px; }
-  main:hover {
-    cursor: pointer; }
+  padding: 250px;
+  &:hover {
+    cursor: pointer;
+  }
+}
 
 header {
   overflow: auto;
@@ -70,7 +94,8 @@ header {
   margin: 0 auto;
   padding: 20px;
   position: relative;
-  top: -200px; }
+  top: -200px;
+}
 
 button {
   font-size: 20px;
@@ -78,23 +103,28 @@ button {
   color: white;
   padding: 15px 20px;
   border: 2px solid white;
-  transition-duration: 0.4s; }
-  button:hover {
+  transition-duration: 0.4s;
+  &:hover {
     background-color: blue;
     color: white;
-    cursor: pointer; }
+    cursor: pointer;
+  }
+}
 
 .container {
   overflow: auto;
   text-align: center;
-  padding: 30px; }
-  .container.showcase {
+  padding: 30px;
+  &.showcase {
     position: relative;
-    bottom: 200px; }
+    bottom: 200px;
+  }
+}
 
 .col-3 {
   float: left;
-  width: 33.3%; }
+  width: 33.3%;
+}
 
 .showcase-1 {
   overflow: auto;
@@ -106,9 +136,11 @@ button {
   background-position: center;
   background-size: cover;
   padding: 20px;
-  margin: 10px; }
-  .showcase-1:hover {
-    cursor: pointer; }
+  margin: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+}
 
 .showcase-2 {
   overflow: auto;
@@ -120,9 +152,11 @@ button {
   background-position: center;
   background-size: cover;
   padding: 20px;
-  margin: 10px; }
-  .showcase-2:hover {
-    cursor: pointer; }
+  margin: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+}
 
 .showcase-3 {
   overflow: auto;
@@ -134,28 +168,34 @@ button {
   background-position: center;
   background-size: cover;
   padding: 20px;
-  margin: 10px; }
-  .showcase-3.hover {
-    cursor: pointer; }
+  margin: 10px;
+  &.hover {
+    cursor: pointer;
+  }
+}
 
 .container.products {
   margin-top: -230px;
-  width: 100%; }
+  width: 100%;
+}
 
 .col-4 {
   float: left;
   width: 25%;
   height: 360px;
   padding: 10px;
-  cursor: pointer; }
-  .col-4 h3 {
+  cursor: pointer;
+  h3 {
     overflow: auto;
     position: relative;
-    top: 200px; }
-  .col-4 p {
+    top: 200px;
+  }
+  p {
     overflow: auto;
     position: relative;
-    top: 200px; }
+    top: 200px;
+  }
+}
 
 .product-1 {
   overflow: auto;
@@ -164,7 +204,8 @@ button {
   background-image: url(../img/3.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200px; }
+  background-size: 200px;
+}
 
 .product-2 {
   overflow: auto;
@@ -173,7 +214,8 @@ button {
   background-image: url(../img/4.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200px; }
+  background-size: 200px;
+}
 
 .product-3 {
   overflow: auto;
@@ -182,7 +224,8 @@ button {
   background-image: url(../img/5.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200px; }
+  background-size: 200px;
+}
 
 .product-4 {
   overflow: auto;
@@ -191,7 +234,8 @@ button {
   background-image: url(../img/6.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200px; }
+  background-size: 200px;
+}
 
 .product-5 {
   overflow: auto;
@@ -200,7 +244,8 @@ button {
   background-image: url(../img/7.jpeg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200px; }
+  background-size: 200px;
+}
 
 .product-6 {
   overflow: auto;
@@ -209,7 +254,8 @@ button {
   background-image: url(../img/8.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200px; }
+  background-size: 200px;
+}
 
 .product-7 {
   overflow: auto;
@@ -218,7 +264,8 @@ button {
   background-image: url(../img/9.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200px; }
+  background-size: 200px;
+}
 
 .product-8 {
   overflow: auto;
@@ -227,11 +274,12 @@ button {
   background-image: url(../img/10.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200px; }
+  background-size: 200px;
+}
 
 footer {
-  position: relative; }
-  footer h1 {
+  position: relative;
+  h1 {
     overflow: auto;
     position: absolute;
     bottom: 0px;
@@ -239,60 +287,104 @@ footer {
     color: white;
     background-color: blue;
     border-radius: 5px;
-    padding: 5px; }
+    padding: 5px;
+  }
+}
 
 @media screen and (max-width: 1100px) {
   .col-4 {
     width: 33.3%;
-    margin: 0 auto; }
+    margin: 0 auto;
+  }
+
   .desktop {
-    display: none; }
+    display: none;
+  }
+
   .logo {
-    text-align: center; }
+    text-align: center;
+  }
+
   .logo ul {
-    display: none; }
+    display: none;
+  }
+
   .pilot {
-    display: block; }
+    display: block;
+  }
+
   main {
-    background-size: cover; }
+    background-size: cover;
+  }
+
   header {
     width: 400px;
-    font-size: 15px; }
+    font-size: 15px;
+  }
+
   .showcase-1 {
     background-size: cover;
-    font-size: 13px; }
+    font-size: 13px;
+  }
+
   .showcase-2 {
     background-size: cover;
-    font-size: 13px; }
+    font-size: 13px;
+  }
+
   .showcase-3 {
     background-size: cover;
-    font-size: 13px; } }
+    font-size: 13px;
+  }
+
+}
 
 @media screen and (max-width: 600px) {
   .col-3 {
-    width: 50%; }
+    width: 50%;
+  }
+
   .col-4 {
-    width: 100%; }
+    width: 100%;
+  }
+
   .tablet {
-    display: none; }
+    display: none;
+  }
+
   .search p {
-    display: none; }
+    display: none;
+  }
+
   .logo {
-    text-align: center; }
+    text-align: center;
+  }
+
   main {
     background-size: cover;
-    padding-top: 30px; }
+    padding-top: 30px;
+  }
+
   header {
     position: relative;
     top: 60px;
     right: 50px;
     font-size: 14px;
-    width: 230px; }
+    width: 230px;
+  }
+
   header h2 {
-    display: none; }
+    display: none;
+  }
+
   .showcase-1 {
     background-size: cover;
-    font-size: 10px; }
+    font-size: 10px;
+  }
+
   .showcase-2 {
     background-size: cover;
-    font-size: 10px; } }
+    font-size: 10px;
+  }
+
+}
