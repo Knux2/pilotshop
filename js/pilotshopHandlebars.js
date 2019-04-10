@@ -1,4 +1,4 @@
-$.get('handlebars/pilotshopHandlebars.hbs', function (thing) {
+$.get('js/pilotshopHandlebars.hbs', function (thing) {
     var source = thing
     var template = Handlebars.compile(source)
     var products =

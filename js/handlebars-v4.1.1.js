@@ -1,7 +1,7 @@
 /**!
 
  @license
- handlebars v4.1.1
+ js v4.1.1
 
 Copyright (C) 2011-2017 by Yehuda Katz
 
