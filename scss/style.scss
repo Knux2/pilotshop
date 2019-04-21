@@ -179,6 +179,10 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 200px;
+  img {
+    height: 190px;
+    width: 190px;
+  }
   &.first {
     background-image: url(../img/3.jpg);
   }
