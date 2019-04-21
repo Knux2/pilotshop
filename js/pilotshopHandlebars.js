@@ -70,6 +70,6 @@ $.get('js/pilotshopHandlebars.hbs', function (thing) {
         }
     var html = template(products)
     console.log(html)
-    $('body').append(html)
+    $('footer').append(html)
 })
 

@@ -87,11 +87,11 @@ main {
 
 header {
   overflow: auto;
+  margin: 0 auto;
   text-align: center;
   text-shadow: 1px 1px black;
   color: white;
   width: 600px;
-  margin: 0 auto;
   padding: 20px;
   position: relative;
   top: -200px;
@@ -115,9 +115,13 @@ button {
   overflow: auto;
   text-align: center;
   padding: 30px;
-  &.showcase {
+  &.showcases {
     position: relative;
     bottom: 200px;
+  }
+  &.products {
+    margin-top: -230px;
+    width: 100%;
   }
 }
 
@@ -126,57 +130,28 @@ button {
   width: 33.3%;
 }
 
-.showcase-1 {
+.showcase {
   overflow: auto;
   color: white;
   text-align: left;
   text-indent: 20px;
-  background-image: url(../img/13.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 20px;
   margin: 10px;
+  &.info1 {
+    background-image: url(../img/13.png);
+  }
+  &.info2 {
+    background-image: url(../img/12.png);
+  }
+  &.info3 {
+    background-image: url(../img/11.png);
+  }
   &:hover {
     cursor: pointer;
   }
-}
-
-.showcase-2 {
-  overflow: auto;
-  color: white;
-  text-align: left;
-  text-indent: 20px;
-  background-image: url(../img/12.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 20px;
-  margin: 10px;
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.showcase-3 {
-  overflow: auto;
-  color: white;
-  text-align: left;
-  text-indent: 20px;
-  background-image: url(../img/11.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 20px;
-  margin: 10px;
-  &.hover {
-    cursor: pointer;
-  }
-}
-
-.container.products {
-  margin-top: -230px;
-  width: 100%;
 }
 
 .col-4 {
@@ -197,97 +172,38 @@ button {
   }
 }
 
-.product-1 {
+.product {
   overflow: auto;
   height: 200px;
   margin-bottom: -150px;
-  background-image: url(../img/3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 200px;
-}
-
-.product-2 {
-  overflow: auto;
-  height: 200px;
-  margin-bottom: -150px;
-  background-image: url(../img/4.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 200px;
-}
-
-.product-3 {
-  overflow: auto;
-  height: 200px;
-  margin-bottom: -150px;
-  background-image: url(../img/5.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 200px;
-}
-
-.product-4 {
-  overflow: auto;
-  height: 200px;
-  margin-bottom: -150px;
-  background-image: url(../img/6.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 200px;
-}
-
-.product-5 {
-  overflow: auto;
-  height: 200px;
-  margin-bottom: -150px;
-  background-image: url(../img/7.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 200px;
-}
-
-.product-6 {
-  overflow: auto;
-  height: 200px;
-  margin-bottom: -175px;
-  background-image: url(../img/8.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 200px;
-}
-
-.product-7 {
-  overflow: auto;
-  height: 200px;
-  margin-bottom: -175px;
-  background-image: url(../img/9.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 200px;
-}
-
-.product-8 {
-  overflow: auto;
-  height: 200px;
-  margin-bottom: -150px;
-  background-image: url(../img/10.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 200px;
-}
-
-footer {
-  position: relative;
-  h1 {
-    overflow: auto;
-    position: absolute;
-    bottom: 0px;
-    right: 16px;
-    color: white;
-    background-color: blue;
-    border-radius: 5px;
-    padding: 5px;
+  &.first {
+    background-image: url(../img/3.jpg);
+  }
+  &.second {
+    background-image: url(../img/4.jpg);
+  }
+  &.third {
+    background-image: url(../img/5.jpg);
+  }
+  &.fourth {
+    background-image: url(../img/6.png);
+  }
+  &.fifth {
+    background-image: url(../img/7.jpeg);
+  }
+  &.sixth {
+    margin-bottom: -175px;
+    background-image: url(../img/8.jpg);
+  }
+  &.seventh {
+    margin-bottom: -175px;
+    background-image: url(../img/9.jpg);
+  }
+  &.eighth {
+    background-image: url(../img/10.jpg);
   }
 }
 
@@ -296,95 +212,65 @@ footer {
     width: 33.3%;
     margin: 0 auto;
   }
-
   .desktop {
     display: none;
   }
-
   .logo {
     text-align: center;
+    ul {
+      display: none;
+    }
   }
-
-  .logo ul {
-    display: none;
-  }
-
   .pilot {
     display: block;
   }
-
   main {
     background-size: cover;
   }
-
   header {
     width: 400px;
     font-size: 15px;
   }
-
-  .showcase-1 {
-    background-size: cover;
-    font-size: 13px;
+  .showcase {
+    &.product {
+      background-size: cover;
+      font-size: 13px;
+    }
   }
-
-  .showcase-2 {
-    background-size: cover;
-    font-size: 13px;
-  }
-
-  .showcase-3 {
-    background-size: cover;
-    font-size: 13px;
-  }
-
 }
 
 @media screen and (max-width: 600px) {
   .col-3 {
     width: 50%;
   }
-
   .col-4 {
     width: 100%;
   }
-
   .tablet {
     display: none;
   }
-
   .search p {
     display: none;
   }
-
   .logo {
     text-align: center;
   }
-
   main {
     background-size: cover;
     padding-top: 30px;
   }
-
   header {
-    position: relative;
-    top: 60px;
-    right: 50px;
-    font-size: 14px;
     width: 230px;
+    font-size: 14px;
+    position: relative;
+    top: 10px;
+    right: 100px;
+    h2 {
+      display: none;
+    }
   }
-
-  header h2 {
-    display: none;
-  }
-
-  .showcase-1 {
+  .showcase {
     background-size: cover;
     font-size: 10px;
   }
-
-  .showcase-2 {
-    background-size: cover;
-    font-size: 10px;
-  }
-
 }

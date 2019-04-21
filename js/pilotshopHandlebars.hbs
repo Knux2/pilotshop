@@ -1,7 +1,13 @@
+
 {{#each products}}
     <div class='col-4'>
-        <img src="{{this.image}}">
-        <h3>{{this.name}}</h3>
+        <div class='product'></div>
+        <style>
+            .product {
+                background-image:url({{this.image}})
+            }
+        </style>
+        <h3>{{this.name}} - {{this.desc}}</h3>
         <p>${{this.price}}</p>
     </div>
 {{/each}}
