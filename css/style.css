@@ -166,8 +166,8 @@ button {
   .col-4 {
     width: 33.3%;
     margin: 0 auto; }
-  .desktop {
-    display: none; }
+    .col-4:nth-child(n+8) {
+      display: none; }
   .logo {
     text-align: center; }
     .logo ul {
@@ -188,6 +188,8 @@ button {
     width: 50%; }
   .col-4 {
     width: 100%; }
+    .col-4:nth-child(n+6) {
+      display: none; }
   .tablet {
     display: none; }
   .search p {
